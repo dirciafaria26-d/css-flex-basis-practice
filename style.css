@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    background-color: lightblue;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+/* Example 1: Pixel values */
+.example1 {
+    flex-wrap: wrap;
+}
+
+.example1 .item1 {
+    flex-basis: 200px;
+}
+
+.example1 .item2 {
+    flex-basis: 100px;
+}
+
+.example1 .item3 {
+    flex-basis: 150px;
+}
+
+/* Example 2: Column direction */
+.example2 {
+    flex-direction: column;
+    height: 400px;
+    align-items: stretch;
+}
+
+.example2 .item {
+    flex: 0 0 100px;
+    background-color: lightgreen;
+}
+
+/* Example 3: Percentage values */
+.example3 .item {
+    flex: 0 0 50%;
+    background-color: lightcoral;
+}
+
+/* Example 4: Flex-basis with flex-grow */
+.example4 {
+    width: 600px;
+    max-width: 100%;
+}
+
+.example4 .item1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.example4 .item2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+    background-color: lightgreen;
+}
+
+.example4 .item3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
